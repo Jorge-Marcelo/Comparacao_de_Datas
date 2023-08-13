@@ -1,0 +1,197 @@
+/*
+Autor: Jorge Marcelo
+Data de Criação: 12/08/2023
+Github: https://github.com/Jorge-Marcelo
+Linkedin: https://www.linkedin.com/in/jorge-marcelo-067a5017b/
+Instagram: https://www.instagram.com/10_stronger/
+Threads: https://www.threads.net/@10_stronger
+*/ 
+
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=REM:ital@1&display=swap');
+
+
+
+/*Configurações padrão*/
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-align: center;
+transition: all 0.5s ease;
+font-family: 'REM', sans-serif;
+}
+
+/*Background color*/
+body{
+background-color: rgb(252, 154, 62);
+}
+
+/*Formulario*/
+form{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 320px;
+background-color: rgb(41, 40, 40);
+border-radius: 10px;
+box-shadow: 0 20px 25px rgba(0,0,0,0.25);
+position: absolute;
+transform: translate(-50%,-50%);
+left: 50%;
+top: 50%;
+padding: 10px;
+border: 3px solid rgb(255, 255, 255);
+}
+
+/*Containers*/
+section{
+display: flex;
+justify-content: space-between;
+}
+
+article{
+width: 300px;
+height: 50px;
+background-color: white;
+border-radius: 10px;
+border: 3px solid rgb(255, 72, 0);
+}
+
+/*Input*/
+input{
+margin: 5px;
+width: 120px;
+height: 30px;
+font-size: 1em;
+border-radius: 10px;
+border: 2px solid rgb(255, 94, 0);
+}
+
+/*Textos*/
+h1{
+color: rgb(255, 81, 0);
+font-size: 1.7em;
+font-weight: 900;
+margin: 10px;
+}
+
+
+h2{
+color: rgb(255, 94, 0);
+font-size: 1.2em;
+font-weight: 900;
+margin: 10px;
+}
+
+p{
+color: rgb(255, 94, 0);
+font-size: 1.1em;
+font-weight: 900;
+}
+
+span{
+color: black;
+font-size: 1em;
+font-weight: 900;
+}
+
+
+
+
+/*Botão de ação*/
+.comparar{
+border-radius: 30px;
+cursor: pointer;
+width: 200px;
+height: 35px;
+font-weight: 900;
+font-size: 1.1em;
+color: rgb(255, 94, 0);
+margin: 10px 0;
+border: 3px solid white;
+background-color:transparent;
+}
+
+.comparar:hover{
+background-color: rgb(255, 147, 75);
+color: rgb(0, 0, 0);
+}
+
+/*Rodape e redes sociais*/
+table {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+margin-top: 20px;
+}
+
+button {
+margin: 0 7px;
+width: 50px; 
+height: 50px; 
+border-radius: 100%;
+cursor: pointer;
+}
+
+
+/*Classes de redes sociais*/
+.social{
+background: transparent;
+border: 2px solid rgb(182, 68, 2);
+background-color: white;
+transition: transform 0.3s ease-in-out;
+}
+
+.social:hover{
+background-color: rgb(248, 139, 96);
+border: 2px solid rgb(255, 255, 255);
+animation: button 0.3s ease-in-out forwards;
+}
+
+
+
+@keyframes button{
+from{
+transform: translateY(0);
+}
+to{
+transform: translateY(-20px);
+}
+}
+
+
+.imageAnim{
+position: relative;
+}
+
+/*Animação de efeito de fade*/
+.efect
+{
+display: flex;
+width: 155px;
+height: 181px;
+position: absolute;
+top: 350px; 
+left: 80px; 
+opacity: 1;
+animation-name: fade; /*Nome da animação*/
+animation-duration: 3s; /*Duração da animação*/
+animation-iteration-count: infinite; /*Contagem que aquela animaçãao sera executada*/
+z-index: 1;
+}
+
+
+@keyframes fade {
+0% { /*Animação cmeça em 0*/
+opacity: 0;
+}
+50%  { /*Atingindo seus 50% ela começa a aparecer*/
+opacity: 1;
+}
+100% { /*Ao chegar o 100% ela perde sua opacidade total e com animation infinite ela retorna esse mesmo processo infinitas vezes*/
+opacity: 0;
+}
+}
